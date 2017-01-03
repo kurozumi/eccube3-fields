@@ -1,0 +1,8 @@
+name: '項目管理'
+code: Fields
+version: 1.0.0
+event: FieldsEvent
+service:
+    - FieldsServiceProvider
+orm.path:
+  - /Resource/doctrine

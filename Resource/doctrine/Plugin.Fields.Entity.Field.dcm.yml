@@ -1,0 +1,36 @@
+Plugin\Fields\Entity\Field:
+    type: entity
+    table: plg_field
+    repositoryClass: Plugin\Fields\Repository\FieldRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: field_id
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: text
+            nullable: false
+        rank:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '0'
+        del_flg:
+            type: smallint
+            nullable: false
+            unsigned: false
+            options:
+                default: '0'
+        create_date:
+            type: datetime
+            nullable: false
+        update_date:
+            type: datetime
+            nullable: false
+
+    lifecycleCallbacks: {  }

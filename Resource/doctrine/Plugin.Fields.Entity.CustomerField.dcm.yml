@@ -1,0 +1,49 @@
+Plugin\Fields\Entity\CustomerField:
+    type: entity
+    table: plg_customer_field
+    repositoryClass: Plugin\Fields\Repository\CustomerFieldRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: customer_filed_id
+            generator:
+                strategy: AUTO
+    fields:
+        text:
+            type: text
+            nullable: true
+        del_flg:
+            type: smallint
+            nullable: false
+            unsigned: false
+            options:
+                default: '0'
+        create_date:
+            type: datetime
+            nullable: false
+        update_date:
+            type: datetime
+            nullable: false
+        customer_id:
+            type: integer
+            nullable: false
+        field_id:
+            type: integer
+            nullable: false
+    manyToOne:
+        Customer:
+            targetEntity: Eccube\Entity\Customer
+            joinColumn:
+                name: customer_id
+                referencedColumnName: customer_id
+        Field:
+            targetEntity: Plugin\Fields\Entity\Field
+            inversedBy: CustomerField
+            joinColumn:
+                name: field_id
+                referencedColumnName: field_id
+
+    lifecycleCallbacks: {  }

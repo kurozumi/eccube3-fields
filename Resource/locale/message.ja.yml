@@ -1,0 +1,7 @@
+admin.plugin.field.save.complete: 項目を保存しました。
+admin.plugin.field.save.error: 項目を保存できませんでした。
+admin.plugin.field.delete.complete: 項目を削除しました。
+admin.plugin.field.delete.error: 項目を削除できませんでした。
+admin.plugin.field.blank.error: 項目が入力されていません。
+admin.plugin.field.not_found: 項目が見つかりません。
+admin.plugin.field.delete.confirm: 項目を削除してもよろしいですか？

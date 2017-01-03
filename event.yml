@@ -1,0 +1,8 @@
+admin.customer.edit.index.initialize:
+    - [onCustomerEditIndexInitialize, NORMAL]
+admin.customer.edit.index.complete:
+    - [onCustomerEditIndexInitialize, NORMAL]
+front.mypage.change.index.initialize:
+    - [onCustomerEditIndexInitialize, NORMAL]
+front.mypage.change.index.complete:
+    - [onCustomerEditIndexInitialize, NORMAL]
